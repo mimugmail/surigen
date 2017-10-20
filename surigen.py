@@ -79,6 +79,7 @@ class Surigen:
         '''
         Generate suricata rule for a domain
         '''
+        dns_request = domain
         rule = (DNS_BASERULE.format(self._org_, name, domain, dns_request, ref, self._sid_))
         self._sid_ += 1
         return rule, self._sid_-1
