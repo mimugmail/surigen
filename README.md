@@ -15,3 +15,7 @@ surigen.py -o opnsense.messaging.rules -s 52000000 -e OPN_Messaging messaging.ls
 surigen.py -o opnsense.file-transfer.rules -s 53000000 -e OPN_File_Transfer file-transfer.lst
 
 surigen.py -o opnsense.mail.rules -s 54000000 -e OPN_Mail mail.lst
+
+surigen.py -o opnsense.media_streaming.rules -s 55000000 -e OPN_Media_Streaming streaming-media.lst
+
+surigen.py -o opnsense.uncategorized.rules -s 56000000 -e OPN_Uncategorized uncategorized.lst
